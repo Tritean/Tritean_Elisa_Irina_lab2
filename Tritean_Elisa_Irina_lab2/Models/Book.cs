@@ -18,6 +18,7 @@ namespace Tritean_Elisa_Irina_lab2.Models
 
         public int? PublisherID { get; set; }
         public Publisher? Publisher { get; set; }
+        public ICollection<Borrowing>? Borrowings { get; set; }
         public ICollection<BookCategory>? BookCategories { get; set; } // Proprietate de navigare pentru relația many-to-many
     }
 }

@@ -7,4 +7,6 @@ public class Tritean_Elisa_Irina_lab2Context(DbContextOptions<Tritean_Elisa_Irin
     public DbSet<Tritean_Elisa_Irina_lab2.Models.Publisher> Publisher { get; set; } = default!;
     public DbSet<Tritean_Elisa_Irina_lab2.Models.Category> Category { get; set; } = default!;
     public DbSet<Tritean_Elisa_Irina_lab2.Models.BookCategory> BookCategory { get; set; } = default!;
+    public DbSet<Tritean_Elisa_Irina_lab2.Models.Member> Member { get; set; } = default!;
+    public DbSet<Tritean_Elisa_Irina_lab2.Models.Borrowing> Borrowing { get; set; } = default!;
 }
