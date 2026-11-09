@@ -1,6 +1,8 @@
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Tritean_Elisa_Irina_lab2.Data;
 
-public class Tritean_Elisa_Irina_lab2Context(DbContextOptions<Tritean_Elisa_Irina_lab2Context> options) : DbContext(options)
+public class Tritean_Elisa_Irina_lab2Context(DbContextOptions<Tritean_Elisa_Irina_lab2Context> options) : IdentityDbContext<ApplicationUser>(options)
 {
     public DbSet<Tritean_Elisa_Irina_lab2.Models.Book> Book { get; set; } = default!;
     public DbSet<Tritean_Elisa_Irina_lab2.Models.Author> Author { get; set; } = default!;
